@@ -20,6 +20,22 @@ class Home extends StatelessWidget {
         ),
         actions: [Icon(Icons.search)],
       ),
+      body: Column(
+        children: [
+          Row(
+            children: [
+              Icon(Icons.cabin),
+              Icon(Icons.home),
+            ],
+          ),
+          Row(
+            children: [
+              Icon(Icons.cabin),
+              Icon(Icons.home),
+            ],
+          ),
+        ],
+      ),
     );
   }
 }
