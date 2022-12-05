@@ -10,8 +10,6 @@ class Music extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: Icon(Icons.music_note),
-    );
+    return Center(child: Image.asset("assets/img/headphone.jpg"));
   }
 }

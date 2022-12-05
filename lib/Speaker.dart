@@ -9,7 +9,7 @@ class Speaker extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Center(
-      child: Icon(Icons.speaker),
+      child: Image.asset("assets/img/speaker.jpg"),
     );
   }
 }
