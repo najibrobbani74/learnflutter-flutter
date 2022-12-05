@@ -9,7 +9,26 @@ class Speaker extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Center(
-      child: Image.asset("assets/img/speaker.jpg"),
-    );
+        child: Column(
+      children: [
+        Image.asset("assets/img/speaker.jpg"),
+        ListText(
+          data: "a",
+        ),
+        ListText(data: "b"),
+        ListText(data: "c"),
+      ],
+    ));
+  }
+}
+
+class ListText extends StatelessWidget {
+  ListText({this.data = "ala"});
+
+  final String data;
+
+  @override
+  Widget build(BuildContext context) {
+    return Text(data);
   }
 }
