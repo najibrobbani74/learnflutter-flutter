@@ -49,6 +49,20 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
           speaker.Speaker(),
         ],
       ),
+      bottomNavigationBar: Material(
+        color: Colors.blue,
+        child: TabBar(
+          controller: controller,
+          tabs: <Widget>[
+            Tab(
+              icon: Icon(Icons.music_note),
+            ),
+            Tab(
+              icon: Icon(Icons.speaker),
+            ),
+          ],
+        ),
+      ),
     );
   }
 }
